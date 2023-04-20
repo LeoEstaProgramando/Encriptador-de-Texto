@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto - Alura Challenges ONE</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="images/Logo.svg" alt="Logo de Alura" />
+    </header>
+    <main>
+      <section class="input">
+        <textarea placeholder="Ingrese el texto aquí" autofocus id="txtarea-input"></textarea>
+        <div class="input-footer">
+            <p>
+                <i class="bi bi-exclamation-circle-fill"></i> Solo letras minúsculas y
+                sin acentos
+              </p>
+              <div class="buttons">
+                <button id="btn-encriptar">Encriptar</button>
+                <button id="btn-desencriptar">Desencriptar</button>
+              </div>
+        </div>
+      </section>
+
+      <section class="output" id="output">
+        <img class="sin-mensaje" src="images/Muñeco.svg" alt="Muñeco buscando respuesta" />
+        <h2 class="sin-mensaje">Ningún mensaje fue encontrado</h2>
+        <p class="sin-mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+      </section>
+
+      <section class="output" id="result">
+        <textarea id="txtarea-output" readonly></textarea>
+        <button id="btn-copiar">Copiar</button>
+      </section>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
